@@ -76,6 +76,9 @@ nav {
 .padSpacing{
     padding-bottom: 4em;
 }
+.lilpad{
+    padding-bottom: 2em;
+}
 
 nav button {
     background: none;
