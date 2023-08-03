@@ -7,18 +7,18 @@
 <body>
 <nav th:replace="partials :: navbar"></nav>
 <div class="container-fluid px-0">
-<div class="headers text-center w-75 mb-3" id="welcome">
-  <h2>Welcome to A Time To Dance</h2>
-  <h4>"Exceed your wedding expectations with the guidance from renowned choreographers, ensuring your special day is filled with unforgettable magic and joy on the dance floor."</h4>
-  <button type="button" class="btn btn-secondary">Free Consultations</button>
+<div class="headers text-center w-50 mb-3 mt-4" id="welcome">
+  <div class="h1 fw-bolder">Welcome to A Time To Dance</div>
+  <div class="h4 fst-italic">"Exceed your wedding expectations with the guidance from renowned choreographers, ensuring your special day is filled with unforgettable magic and joy on the dance floor."</div>
+  <button type="button" class="btn btn-secondary text-dark mt-3 navSpacing" id="greenish">Free Consultations</button>
 </div>
-<div class="container-fluid text-center mainfont bgrey">
+<div class="container-fluid mt-4 px-0 text-center mainfont bgrey">
 <div class="d-flex justify-content-center">
-  <p class="mb-0 pb-2" id="greetings">Hi there! We are Matthew and Lindsey Hunt, two former professional dancers who have a passion for connecting with others and serving our community. After getting maring in 2019, we recognized that our skill set as dancers put us in a very unique position to help others feel confident and enjoy their own dancing on their special day. Our goal is simple: create the choreography that is personalized to your vision and help empower you to carry it out. We would love to discuss how we can help you take the next step in making your day a memorable one.</p>
+  <div class="mb-0 pb-2 h6" id="greetings">Hi there! We are Matthew and Lindsey Hunt, two former professional dancers who have a passion for connecting with others and serving our community. After getting maring in 2019, we recognized that our skill set as dancers put us in a very unique position to help others feel confident and enjoy their own dancing on their special day. Our goal is simple: create the choreography that is personalized to your vision and help empower you to carry it out. We would love to discuss how we can help you take the next step in making your day a memorable one.</div>
 </div>
-<p class="headers ps-4 pb-3 mb-0 h3 text-start">What We Offer</p>
+<p class="headers ps-4 pb-4 mb-0 h3 text-start"><span class="skinnyFont">What We Offer</span></p>
 </div>
-  <div class="bgrey" id="imgcar">
+  <div class="bgrey pt-4" id="imgcar">
     <img th:src="@{/img/img.png}" alt="first dance" class="placeholder ms-4">
     <img th:src="@{/img/img.png}" alt="mother son" class="placeholder mx-4">
     <img th:src="@{/img/img.png}" alt="father daughter" class="placeholder mx-4">
@@ -28,11 +28,11 @@
 <!--    <img th:src="@{/img/img.png}" alt="wedding party staging" class="placeholder">-->
 <!--    <img th:src="@{/img/img.png}" alt="music editing" class="placeholder">-->
   </div>
-  <div class="container-fluid text-center mainfont bgrey pb-4">
-    <p class="headers ps-4 pt-2 mb-0 pb-4 h3 text-start">Reviews and Testimonials</p>
-    <div class="dot me-4">Review</div>
-    <div class="dot mx-2">Review</div>
-    <div class="dot ms-2">Review</div>
+  <div class="container-fluid text-center mainfont bgrey px-0 pt-4 padSpacing">
+    <div class="headers ps-4 pt-2 mb-0 h3 text-start"><span class="skinnyFont">Reviews and Testimonials</span></div>
+    <div class="dot mt-4 pt-4 me-4">Review</div>
+    <div class="dot mt-4 pt-4 mx-2">Review</div>
+    <div class="dot mt-4 pt-4 ms-2">Review</div>
 <!--    <img th:src="@{/img/img.png}" alt="flash mob" class="rounded-circle mx-4 bg-white">-->
 <!--    <img th:src="@{/img/img.png}" alt="flash mob" class="rounded-circle mx-4 bg-white">-->
 <!--    <img th:src="@{/img/img.png}" alt="flash mob" class="rounded-circle mx-4 bg-white">-->
