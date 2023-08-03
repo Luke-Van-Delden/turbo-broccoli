@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head th:replace="partials :: head">
+  <meta charset="UTF-8">
+  <title>Home</title>
+</head>
+<body>
+<nav th:replace="partials :: navbar"></nav>
+<div class="container-fluid px-0">
+<div class="headers text-center w-75 mb-3" id="welcome">
+  <h2>Welcome to A Time To Dance</h2>
+  <h4>"Exceed your wedding expectations with the guidance from renowned choreographers, ensuring your special day is filled with unforgettable magic and joy on the dance floor."</h4>
+  <button type="button" class="btn btn-secondary">Free Consultations</button>
+</div>
+<div class="container-fluid text-center mainfont bgrey">
+<div class="d-flex justify-content-center">
+  <p class="mb-0 pb-2" id="greetings">Hi there! We are Matthew and Lindsey Hunt, two former professional dancers who have a passion for connecting with others and serving our community. After getting maring in 2019, we recognized that our skill set as dancers put us in a very unique position to help others feel confident and enjoy their own dancing on their special day. Our goal is simple: create the choreography that is personalized to your vision and help empower you to carry it out. We would love to discuss how we can help you take the next step in making your day a memorable one.</p>
+</div>
+<p class="headers ps-4 pb-3 mb-0 h3 text-start">What We Offer</p>
+</div>
+  <div class="bgrey" id="imgcar">
+    <img th:src="@{/img/img.png}" alt="first dance" class="placeholder ms-4">
+    <img th:src="@{/img/img.png}" alt="mother son" class="placeholder mx-4">
+    <img th:src="@{/img/img.png}" alt="father daughter" class="placeholder mx-4">
+    <img th:src="@{/img/img.png}" alt="flash mob" class="placeholder mx-4">
+
+<!--    ADDITIONAL 2 MORE FOR CAROUSELL-->
+<!--    <img th:src="@{/img/img.png}" alt="wedding party staging" class="placeholder">-->
+<!--    <img th:src="@{/img/img.png}" alt="music editing" class="placeholder">-->
+  </div>
+  <div class="container-fluid text-center mainfont bgrey pb-4">
+    <p class="headers ps-4 pt-2 mb-0 pb-4 h3 text-start">Reviews and Testimonials</p>
+    <div class="dot me-4">Review</div>
+    <div class="dot mx-2">Review</div>
+    <div class="dot ms-2">Review</div>
+<!--    <img th:src="@{/img/img.png}" alt="flash mob" class="rounded-circle mx-4 bg-white">-->
+<!--    <img th:src="@{/img/img.png}" alt="flash mob" class="rounded-circle mx-4 bg-white">-->
+<!--    <img th:src="@{/img/img.png}" alt="flash mob" class="rounded-circle mx-4 bg-white">-->
+
+  </div>
+  </div>
+
+<footer th:replace="partials :: footer"></footer>
+<div th:insert="partials :: boot-scripts"></div>
+</body>
+</html>
