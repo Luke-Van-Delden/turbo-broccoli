@@ -36,25 +36,26 @@
     </div>
 
 </nav>
-<footer th:fragment="footer" class="footer-bg d-flex justify-content-evenly align-items-center">
+<footer th:fragment="footer" class="footer-bg d-flex justify-content-evenly align-items-center pt-4 pb-4">
     <div>
         <button class="h2" type="button" onclick="window.location.href='/'">A Time<br>To Dance</button>
     </div>
     <div class="d-flex me-4 flex-column align-items-center text-center">
         <p>Want to partner with us?</p>
         <p>Ease the stress of planning your wedding dance along.<br>To learn more for free,click below!</p>
-        <button type="button" class="btn btn-secondary text-dark" id="brownish" onclick="window.location.href='/contact'">Free Consultations
+        <button type="button" class="btn btn-secondary text-dark" id="brownish" onclick="window.location.href='/contact'">Free Consultation
         </button>
         <div><span class="smalldot text-center">F</span><span class="smalldot text-center">T</span></div>
+        <div class="text-center">Copyright 2023 A Time to Dance</div>
     </div>
     <div class="d-flex me-4 flex-column">
-        <p class="h4">Quick Links</p>
-        <button type="button" onclick="window.location.href='/'">Home</button>
-        <button type="button" onclick="window.location.href='/about'">About Us</button>
-        <button type="button" onclick="window.location.href='/gallery'">Gallery</button>
-        <button type="button" onclick="window.location.href='/rates'">Rates</button>
-        <button type="button" onclick="window.location.href='/faq'">FAQ</button>
-        <button type="button" onclick="window.location.href='/contact'">Contact</button>
+        <p class="h5 footerLinks"><span class="skinnyFont">Quick Links</span></p>
+        <button type="button" class="footerLinks" onclick="window.location.href='/'"><span class="skinnyFont">Home</span></button>
+        <button type="button" class="footerLinks" onclick="window.location.href='/about'"><span class="skinnyFont">About Us</span></button>
+        <button type="button" class="footerLinks" onclick="window.location.href='/gallery'"><span class="skinnyFont">Gallery</span></button>
+        <button type="button" class="footerLinks" onclick="window.location.href='/rates'"><span class="skinnyFont">Rates</span></button>
+        <button type="button" class="footerLinks" onclick="window.location.href='/faq'"><span class="skinnyFont">FAQ</span></button>
+        <button type="button" class="footerLinks" onclick="window.location.href='/contact'"><span class="skinnyFont">Contact</span></button>
     </div>
     <!--  <p class="p-0 m-1 d-flex" id="footer">This is the Footer</p>-->
 </footer>
