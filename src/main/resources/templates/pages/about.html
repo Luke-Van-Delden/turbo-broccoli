@@ -4,13 +4,86 @@
   <meta charset="UTF-8">
   <title>About Us</title>
 </head>
-<body>
+<body class="bgrey">
 <nav th:replace="partials :: navbar"></nav>
-<hr>
-<div>
-  <h1>About Us</h1>
+<div class="container-fluid text-center padSpacing">
+<div class="row w-100">
+  <div class="col-6">
+    <div class="col-11 offset-1">
+    <div class="h2 headers">Intro/Who We Are</div>
+    <div class="h5 headers col-8 offset-2">Hello! We are two former professional dancers who love people, Jesus, and cats. Brunch on Sundays, a night out with our community, or talking with our favorite cat Luna are all some of our favorite pass times.</div>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="col-7 offset-2">
+    <img th:src="@{/img/img.png}" alt="first dance" class="placeholder2 ms-4 w-75">
+    </div>
+  </div>
 </div>
-<hr>
+</div>
+<div class="container-fluid text-center bigpad greenish">
+  <div class="row w-100">
+    <div class="col-6">
+      <div class="col-7 offset-3">
+        <img th:src="@{/img/img.png}" alt="first dance" class="placeholder2 ms-4 w-75">
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="col-11">
+      <div class="h2 headers">How We Met</div>
+      <div class="h5 headers col-8 offset-2">It all started at Oklahoma City University where we locked eyes in a dance studio. Matt wagers sparks flew because he looked like Lindsey's favorite crush, Joe Jonas. Lindsey denies that, but between us, we both know it's true. Soon we became friends at turned into something more. We've been together since 2013, and happily married since 2019!</div>
+    </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid text-center bigpad">
+  <div class="row w-100">
+    <div class="col-6">
+      <div class="col-11 offset-1">
+        <div class="h2 headers">Our Experiences</div>
+        <div class="h5 headers col-8 offset-2">Upon graduating with degrees in dance performance as well as arts management, we began our profesional performing career with cruise companies such as Holland America Line, Celebrity Cruises, and Princess Cruises. We were fortunate enough to work with leaders in the entertainment industry such as Broadway composer Stephen Schwartz and talent agency RWS Entertainment Group out of New York City. We traveled the world, met many friends, and even taugh dance lessons to cruis ship guests onboard!</div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="col-7 offset-2">
+        <img th:src="@{/img/img.png}" alt="first dance" class="placeholder2 ms-4 w-75">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid text-center bigpad greenish">
+  <div class="row w-100">
+    <div class="col-6">
+      <div class="col-7 offset-3">
+        <img th:src="@{/img/img.png}" alt="first dance" class="placeholder2 ms-4 w-75">
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="col-11">
+        <div class="h2 headers">Where We Are Now</div>
+        <div class="h5 headers col-8 offset-2">In 2020, we moved to San Antonio, Texas to establish our home and transition to land-based careers. Matt teachs and choreographs full time for local competitive dance studios in the area, and Lindsey manages the sam studios. Matt also founded a dance ministry called Kairos Dance that merges faith, film, and dance with the goal of bringing God back into the performing arts.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid text-center bigpad">
+  <div class="row w-100">
+    <div class="col-6">
+      <div class="col-11 offset-1">
+        <div class="h2 headers">Whats to Come</div>
+        <div class="h5 headers col-8 offset-2">We hope to slowly grow this business and develop new and positive relationships with our clients in the years to come! Thank yuo for taking the time to learn a bit about us.</div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="col-7 offset-2">
+        <img th:src="@{/img/img.png}" alt="first dance" class="placeholder2 ms-4 w-75">
+      </div>
+    </div>
+  </div>
+</div>
+
 <footer th:replace="partials :: footer"></footer>
 <div th:insert="partials :: boot-scripts"></div>
 </body>

@@ -36,6 +36,9 @@ nav {
 #greenish{
     background-color: #8f9a8e;
 }
+.greenish{
+    background-color: #8f9a8e;
+}
 #brownish{
     background-color: #aba083;
 }
@@ -43,6 +46,12 @@ nav {
     background-color: white;
     width: 20%;
     height: 25%;
+    object-fit: contain;
+}
+.placeholder2{
+    background-color: white;
+    width: 80%;
+    height: 50%;
     object-fit: contain;
 }
 
@@ -92,6 +101,10 @@ nav {
 }
 .lilpad{
     padding-bottom: 2em;
+}
+.bigpad{
+    padding-bottom: 6em;
+    padding-top: 6em;
 }
 
 nav button {
