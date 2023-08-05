@@ -4,13 +4,34 @@
   <meta charset="UTF-8">
   <title>Rates</title>
 </head>
-<body>
+<body class="bgrey">
 <nav th:replace="partials :: navbar"></nav>
-<hr>
-<div>
-  <h1>Rates</h1>
+<div class="container headers padSpacing">
+  <div class="h3">Private Lessons</div>
+  <div class="h6">Experience personalized instruction tailored to your needs with our private lessons. Whether you're looking to perfect your dance skills with a small group or want to dance with a larger group, we have flexible options for you.</div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-4"><img th:src="@{/img/img.png}" alt="first dance" class="placeholder3"></div>
+      <div class="col-4"><img th:src="@{/img/img.png}" alt="first dance" class="placeholder3"></div>
+      <div class="col-4"><img th:src="@{/img/img.png}" alt="first dance" class="placeholder3"></div>
+    </div>
+  </div>
+  <div class="h6">We are dedicated to delivering exceptional dance experiences and making your vision a reality. Contact us today to schedule your private lessons or discuss your music editing needs.<br><br>Click to view
+    <button type="button" class="h4" id="removeDec" onclick="window.location.href='/faq'">frequently asked questions.</button></div>
+
+
 </div>
-<hr>
+
+<div class="container headers padSpacing">
+  <div class="h3">Music Editing</div>
+  <div class="h6">Enhance your dance performance with professionally edited music that perfectly compliments your moves. Our music editing service ensures seamless transitions and percise timing for an unforgettable dance routine.</div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-4 offset-4"><img th:src="@{/img/img.png}" alt="first dance" class="placeholder3"></div>
+    </div>
+  </div>
+</div>
+
 <footer th:replace="partials :: footer"></footer>
 <div th:insert="partials :: boot-scripts"></div>
 </body>
