@@ -96,6 +96,10 @@ nav {
     font-weight: 1;
 }
 
+.lineSpacing{
+    line-height: 1;
+}
+
 .skinnyFont{
     font-weight: 1;
 }

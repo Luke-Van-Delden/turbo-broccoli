@@ -4,13 +4,30 @@
   <meta charset="UTF-8">
   <title>FAQ</title>
 </head>
-<body>
+<body class="bgrey">
 <nav th:replace="partials :: navbar"></nav>
-<hr>
-<div>
-  <h1 class="tester">FAQ</h1>
+<div class="container headers">
+  <div class="h3 pb-2">I do not have a lot of dance experience, is that ok?</div>
+  <div class="h6 lilpad">Absolutely! We are able to accommodate all levels and will only put together a piece that everyone is comfortable with. we will help you feel confident in your movement so you can focus on having a great time.</div>
+  <hr>
+  <div class="h3 pb-2">What styles do you do?</div>
+  <div class="h6 lilpad">We can choreograph in the style of your choice or can help you pick out a style according to your taste. We do everything: ballroom, hip hop, jazz funk, line dancing, two stepping, etc.</div>
+  <hr>
+  <div class="h3 pb-2">What should we wear to our lessons?</div>
+  <div class="h6 lilpad">Whatever you can comfortably move in. Ladies: if you plan to wear heels during your dance and would like to wear them (or something similar), you are welcome to do so.</div>
+  <hr>
+  <div class="h3 pb-2">How many dance lessons does it take to learn a routine?</div>
+  <div class="h6 lilpad">This is different for everyone; it all depends on how quickly you can pick up the steps. Typically it takes a 2-3 hour-long sessions to learn a full 2.5 minute routine (depending on how complex it is) and an additional 2 lessons to make sure you're feeling confident and ready to perform it in front of your guests. However, you may choose to do as many or as few as you would like!</div>
+  <hr>
+  <div class="h3 pb-2">What forms of payment do you accept?</div>
+  <div class="h6 lilpad">We accept cash, check, Venmo, or Zelle.</div>
+  <hr><div class="h3 pb-2">What if I have a conflict with a scheduled lesson?</div>
+  <div class="h6 lilpad">If a conflict arises and you are no longer able to attend your scheduled lesson, we are willing to work with you to reschedule to a time that works for both parties. If you do not wish to reschedule your canceled lesson, a $25 cancellation fee will be applied.</div>
+  <hr>
+  <br>
+  <div class="h6 bigpad">If you have any other questions, please reach out via <button type="button" class="h4" id="removeDec" onclick="window.location.href='/faq'">Contact Us</button></div></div>
+
 </div>
-<hr>
 <footer th:replace="partials :: footer"></footer>
 <div th:insert="partials :: boot-scripts"></div>
 </body>
