@@ -41,6 +41,9 @@ nav {
 #brownish{
     background-color: #aba083;
 }
+.brownish{
+    background-color: #aba083;
+}
 .placeholder{
     background-color: white;
     width: 20%;
@@ -98,6 +101,10 @@ nav {
 
 .lineSpacing{
     line-height: 1;
+}
+
+#submitBox{
+    width: 60%;
 }
 
 .skinnyFont{

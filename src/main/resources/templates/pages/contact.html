@@ -1,16 +1,37 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
 <head th:replace="partials :: head">
-  <meta charset="UTF-8">
-  <title>Contact Us</title>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
 </head>
-<body>
+<body class="bgrey">
 <nav th:replace="partials :: navbar"></nav>
-<hr>
-<div>
-  <h1>Contact Us</h1>
+<div class="container text-center greenish pt-4 mb-4 lilpad headers" id="submitBox">
+    <div class="row">
+        <div class="col-12">
+            <div class="headers h4">Get in Touch</div>
+        </div>
+    </div>
+    <div class="row mb-2">
+        <div class="col-4 offset-1 bgrey">First Name</div>
+        <div class="col-4 offset-2 bgrey">Last Name</div>
+    </div>
+    <div class="row mb-2">
+        <div class="col-4 offset-1 bgrey">Email</div>
+        <div class="col-4 offset-2 bgrey">Phone</div>
+    </div>
+    <div class="row mb-2">
+        <div class="col-10 offset-1 brownish">Tell us more</div>
+    </div>
+    <div class="row">
+        <div class="col-4 offset-4 brownish">Send</div>
+    </div>
 </div>
-<hr>
+
+<div class="container submitBox text-center h3 headers">
+    <div class="mb-4">We would love to work with you!</div>
+    <div class="mb-4">Take a leap and send us a message to set up your free consultation today.</div>
+</div>
 <footer th:replace="partials :: footer"></footer>
 <div th:insert="partials :: boot-scripts"></div>
 </body>
