@@ -6,29 +6,30 @@
 </head>
 <body class="bgrey">
 <nav th:replace="partials :: navbar"></nav>
-<div class="container text-center greenish pt-4 mb-4 lilpad headers" id="submitBox">
+<form class="container text-center greenish pt-4 mb-4 lilpad headers" th:action="@{/contact}" th:method="post" th:object="${submission}">
     <div class="row">
         <div class="col-12">
             <div class="headers h4">Get in Touch</div>
         </div>
     </div>
     <div class="row mb-2">
-        <div class="col-4 offset-1 bgrey">First Name</div>
-        <div class="col-4 offset-2 bgrey">Last Name</div>
+        <input class="col-4 offset-1 bgrey text-center" id="firstName" name="firstName" placeholder="First Name" th:field="*{firstName}" type="text">
+        <input class="col-4 offset-2 bgrey text-center" id="lastName" name="lastName" placeholder="Last Name" th:field="*{lastName}" type="text">
     </div>
     <div class="row mb-2">
-        <div class="col-4 offset-1 bgrey">Email</div>
-        <div class="col-4 offset-2 bgrey">Phone</div>
+        <input class="col-4 offset-1 bgrey text-center" id="email" name="email" placeholder="Email" th:field="*{email}" type="text">
+        <input class="col-4 offset-2 bgrey text-center" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" th:field="*{phoneNumber}" type="text">
     </div>
     <div class="row mb-2">
-        <div class="col-10 offset-1 brownish">Tell us more</div>
+        <textarea class="col-10 offset-1 brownish headers" rows="4" id="description" name="description" placeholder="Tell us more" th:field="*{description}" type="text">
+        </textarea>
     </div>
     <div class="row">
-        <div class="col-4 offset-4 brownish">Send</div>
+        <button class="col-4 offset-4 brownish btn" type="submit" id="sendEmail">Send</button>
     </div>
-</div>
+</form>
 
-<div class="container submitBox text-center h3 headers">
+<div class="container submitBox text-center h3 headers w-50">
     <div class="mb-4">We would love to work with you!</div>
     <div class="mb-4">Take a leap and send us a message to set up your free consultation today.</div>
 </div>
