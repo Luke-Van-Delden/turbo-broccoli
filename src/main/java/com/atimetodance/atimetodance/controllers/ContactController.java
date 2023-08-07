@@ -28,6 +28,10 @@ class ContactController {
     public String createGameSession(@ModelAttribute Submission submission) {
         emailService.sendSubmission(submission);
         emailService.receipt(submission);
-        return "redirect:/contact";
+        return "redirect:/submitted";
+    }
+    @GetMapping("/submitted")
+    public String contactUs() {
+        return "pages/submitted";
     }
 }
