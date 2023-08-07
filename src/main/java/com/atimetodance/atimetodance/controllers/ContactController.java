@@ -31,7 +31,10 @@ class ContactController {
         return "redirect:/submitted";
     }
     @GetMapping("/submitted")
-    public String contactUs() {
+    public String contactUs(@ModelAttribute Submission submission) {
+//        ADD IN MODEL TO PASS IN FIRST NAME
+//        ADD LOGIC TO REDIRECT TO CONTACT IF NOT SUBMITTED IN SESSION ALREADY - COOKIE?
+        System.out.println(submission.getFirstName());
         return "pages/submitted";
     }
 }
